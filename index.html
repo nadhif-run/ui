@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Loading</title>
 </head>
 <body>
   <script>
@@ -13,7 +13,7 @@
         
         // Pastikan koneksi berhasil
         if (!response.ok) {
-            window.location.href = "https://semioratorical-unbreakably-dacia.ngrok-free.dev/";
+          throw new Error("HTTP error " + response.status);
         }
 
         const server = await response.json();
@@ -26,8 +26,7 @@
         }
       } catch (error) {
           console.error("Terjadi kesalahan:", error);
-          window.location.href = "https://semioratorical-unbreakably-dacia.ngrok-free.dev/";
-
+          window.location.href = "./gangguan.html";
       }
     }
 

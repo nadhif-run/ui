@@ -130,7 +130,7 @@
             Saat ini sistem kami sedang menjalani perawatan rutin atau mengalami gangguan jaringan singkat untuk meningkatkan pengalaman Anda. Jangan khawatir, data Anda tetap aman.
         </p>
 
-        <button class="btn-refresh" onclick="location.reload()">
+        <button class="btn-refresh" onclick="Reload()">
             Coba Muat Ulang Halaman
         </button>
 
@@ -139,6 +139,11 @@
             Terima kasih atas kesabaran Anda.
         </div>
     </div>
-
+    
+    <script>
+        function Reload() {
+            window.location.href = "./index.html";
+        }
+    </script>
 </body>
 </html>
