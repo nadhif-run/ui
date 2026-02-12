@@ -7,7 +7,7 @@ async function getData() {
         }
 
         // window.location.href = "https://semioratorical-unbreakably-dacia.ngrok-free.dev/";
-        window.location.href = "https://semioratorical-unbreakably-dacia.ngrok-free.dev/";
+        window.location.replace("https://semioratorical-unbreakably-dacia.ngrok-free.dev/");
 
     } catch (error) {
         console.error('Error:', error);
